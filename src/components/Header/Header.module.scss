@@ -1,0 +1,39 @@
+:global {
+    body[data-theme = 'light' ] {
+        --text-color: var(--black-color);
+        --bg-color: var(--white-color);
+    }
+    body[data-theme = 'dark' ] {
+        --text-color: var(--white-color);
+        --bg-color:  var(--black-color);
+    }
+}
+.wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .first {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .dropdown {
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            .arrowDown {
+                rotate: 180deg;
+            }
+            .title {
+                color:var(--text-color);
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+        .divider {
+            margin: 0 15px;
+            height: 100%;
+            border-left: 1px solid var(--light-gray-color);
+        }
+    }
+}
