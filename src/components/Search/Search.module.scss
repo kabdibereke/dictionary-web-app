@@ -39,3 +39,18 @@
         cursor: pointer;
     }
 }
+
+@media (max-width:450px) {
+    .wrapper {
+        
+        height: 80px;
+       
+        .input {
+           
+            height: 80px;
+            
+            
+        }
+       
+    }
+}
